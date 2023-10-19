@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./js/main.js"></script>
+    <title>Event Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png" />
+  </head>
+  <body>
+    <div class="progress-bar"></div>
+    <button type="button" class="btn-to-top" title="Scroll Up">
+      <svg class="btn-to-top__icon">
+        <use href="./images/icons.svg#icon-arrowright"></use>
+      </svg>
+    </button>
+    <header class="header container">
+      <svg class="header__logo">
+        <use href="./images/icons.svg#icon-logo"></use>
+      </svg>
+      <nav class="header-nav hidden">
+        <a class="header-nav__link" href="#header">Home</a>
+        <a class="header-nav__link" href="#about">About</a>
+        <a class="header-nav__link" href="#tickets">Tickets</a>
+        <a class="header-nav__link" href="#schedule">Schedule</a>
+        <a class="header-nav__link" href="#speakers">Speakers</a>
+        <a class="header-nav__link" href="#contacts">Contacts</a>
+      </nav>
+      <button class="header__button" type="button">REGISTER NOW</button>
+      <svg class="header__menu-icon">
+        <use href="./images/icons.svg#icon-hamburger"></use>
+      </svg>
+    </header>
+    <div class="header__border"></div>
+    <main class="main container">
+      <section>
+        <p class="main__text-date">october 25 - 28-2024 / remote design week</p>
+        <h1 class="main__text-event-info">Our Design Event is coming up!</h1>
+        <div class="main-buttons">
+          <button class="main-buttons__button">BOOK A SEAT</button>
+          <button class="main-buttons__button">LEARN MORE</button>
+        </div>
+        <ul class="designers-list">
+          <li class="designer designer--1">
+            <img src="./images/anderson_adam.jpg" alt="App Designer" />
+            <p class="designer__name">Anderson Adam</p>
+            <p class="designer__position">App Designer</p>
+          </li>
+          <li class="designer designer--2">
+            <img src="./images/edwards_reyes.jpg" alt="Web Designer" />
+            <p class="designer__name">Edwards Reyes</p>
+            <p class="designer__position">Web Designer</p>
+          </li>
+          <li class="designer designer--3">
+            <img src="./images/rogers_parker.png" alt="Product Designer" />
+            <p class="designer__name">Rogers Parker</p>
+            <p class="designer__position">Product Designer</p>
+          </li>
+        </ul>
+      </section>
+      <section class="meeting" id="about">
+        <div class="meeting-text">
+          <h2 class="meeting-text__title">Events You'll Remember</h2>
+          <h3 class="meeting-text__big">
+            We are a turnkey event agency in New York.
+          </h3>
+          <p class="meeting-text__small">
+            EventiX is a leading event management company in the United States.
+            We hold the highest quality events pushing the boundaries of the
+            industry standards.
+          </p>
+          <p class="meeting-text__small">
+            We are passionate about creating integrated experiences that bring
+            cohesive connection between brands and targeted audience. Our team
+            of experienced and talented event managers strive to deliver stellar
+            results.
+          </p>
+        </div>
+        <div class="meeting-image">
+          <img src="./images/meeting.png" alt="meeting" />
+          <div class="meeting-timer">
+            <div class="meeting-timer__column">
+              <p class="meeting-timer__value" id="days">00</p>
+              <p class="meeting-timer__label">Days</p>
+            </div>
+            <div class="meeting-timer__column">
+              <p class="meeting-timer__value" id="hours">00</p>
+              <p class="meeting-timer__label">Hours</p>
+            </div>
+            <div class="meeting-timer__column">
+              <p class="meeting-timer__value" id="minutes">00</p>
+              <p class="meeting-timer__label">Minutes</p>
+            </div>
+            <div class="meeting-timer__column">
+              <p class="meeting-timer__value" id="seconds">00</p>
+              <p class="meeting-timer__label">Seconds</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="speakers" id="speakers">
+        <h2 class="speakers__text-title">Meet the talented Speakers</h2>
+        <p class="speakers__text-small">
+          The convention is the main event of the year for professionals in the
+          world of design and architecture.
+        </p>
+        <ul class="speakers__list">
+          <li class="speaker speaker--one">
+            <img
+              class="speaker__image"
+              src="./images/duke_stump.png"
+              alt="Duke Stump"
+            />
+            <img
+              class="speaker__gradient"
+              src="./images/speaker_gradient.png"
+              alt="gradient"
+            />
+            <h4 class="speaker__name">Duke Stump</h4>
+            <p class="speaker__info">
+              Game-Changing CMO & Founder,<br />Nonfire with Soul
+            </p>
+          </li>
+          <li class="speaker speaker--two">
+            <img
+              class="speaker__image"
+              src="./images/jelani_memory.png"
+              alt="Jelani Memory"
+            />
+            <img
+              class="speaker__gradient"
+              src="./images/speaker_gradient.png"
+              alt="gradient"
+            />
+            <h4 class="speaker__name">Jelani Memory</h4>
+            <p class="speaker__info">
+              Global Authority on Privacy & Security.<br />Founder, Global
+              Privacy by Design.
+            </p>
+          </li>
+          <li class="speaker speaker--three">
+            <img
+              class="speaker__image"
+              src="./images/christa_couture.png"
+              alt="Christa Couture"
+            />
+            <img
+              class="speaker__gradient"
+              src="./images/speaker_gradient.png"
+              alt="gradient"
+            />
+            <h4 class="speaker__name">Christa Couture</h4>
+            <p class="speaker__info">
+              Advocate, Builder, Changemaker,<br />Youngest Developer in the
+              USA.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="schedule" id="schedule">
+        <div class="schedule-text">
+          <h2 class="schedule-text__big">Schedule</h2>
+          <p class="schedule-text__small">
+            A representation of the event planning of the Design Conference
+          </p>
+          <button
+            class="schedule-text__button"
+            type="submit"
+            onclick="window.open('./files/schedule.pdf')"
+          >
+            Download Schedule
+          </button>
+        </div>
+        <div class="schedule-calendar">
+          <ul class="schedule-calendar__days">
+            <li class="schedule-calendar__day">
+              <h5 class="schedule-calendar__day-title">Day One</h5>
+              <p class="schedule-calendar__date">
+                <span class="schedule-calendar__date--nr">25</span> October,
+                Monday
+              </p>
+            </li>
+            <li class="schedule-calendar__day">
+              <h5 class="schedule-calendar__day-title">Day Secend</h5>
+              <p class="schedule-calendar__date">
+                <span class="schedule-calendar__date--nr">26</span> October,
+                Tuesday
+              </p>
+            </li>
+            <li class="schedule-calendar__day">
+              <h5 class="schedule-calendar__day-title">Day Third</h5>
+              <p class="schedule-calendar__date">
+                <span class="schedule-calendar__date--nr">27</span> October,
+                Wednesday
+              </p>
+            </li>
+          </ul>
+
+          <div class="schedule-calendar__days-lines">
+            <div class="schedule-calendar__day-line"></div>
+            <div class="schedule-calendar__days-line"></div>
+          </div>
+
+          <div class="schedule-calendar__time-list">
+            <div class="schedule-calendar__time-list-vertical-line"></div>
+            <ul>
+              <li class="schedule-calendar__time-list-items">
+                <p class="schedule-calendar__time-list-time">
+                  8:00 - 9:00
+                </p>
+                <svg class="schedule-calendar__time-list-icon">
+                  <use href="./images/icons.svg#icon-circle"></use>
+                </svg>
+                <div class="schedule-calendar__time-list-info">
+                  <h4>Registration & Coffee</h4>
+                  <p>
+                    Register your personal data in customer service and take
+                    coffee before entering the room
+                  </p>
+                </div>
+              </li>
+              <li class="schedule-calendar__time-list-items">
+                <p class="schedule-calendar__time-list-time">
+                  09:00 - 12:00
+                </p>
+                <svg class="schedule-calendar__time-list-icon">
+                  <use href="./images/icons.svg#icon-circle"></use>
+                </svg>
+                <div class="schedule-calendar__time-list-info">
+                  <h4>Plan & Conduct User Research</h4>
+                  <p>
+                    Many early researchers are challanged by aspect of the
+                    design and implementation of research studies as well the
+                    efective dissemunation.
+                  </p>
+                </div>
+              </li>
+              <li class="schedule-calendar__time-list-items">
+                <p class="schedule-calendar__time-list-time">
+                  12:00 - 13:00
+                </p>
+                <svg class="schedule-calendar__time-list-icon">
+                  <use href="./images/icons.svg#icon-circle"></use>
+                </svg>
+                <div class="schedule-calendar__time-list-info">
+                  <h4>Q&A For Speaker</h4>
+                  <p>
+                    Register your personal data in customer service and take
+                    coffee before entering the room
+                  </p>
+                </div>
+              </li>
+              <li class="schedule-calendar__time-list-items">
+                <p class="schedule-calendar__time-list-time">
+                  13:00 - 14:00
+                </p>
+                <svg class="schedule-calendar__time-list-icon">
+                  <use href="./images/icons.svg#icon-circle"></use>
+                </svg>
+                <div class="schedule-calendar__time-list-info">
+                  <h4>Launch Break</h4>
+                  <p>Enjoy your meal!</p>
+                </div>
+              </li>
+              <li class="schedule-calendar__time-list-items">
+                <p class="schedule-calendar__time-list-time">
+                  14:00 - 16:00
+                </p>
+                <svg class="schedule-calendar__time-list-icon">
+                  <use href="./images/icons.svg#icon-circle"></use>
+                </svg>
+                <div class="schedule-calendar__time-list-info">
+                  <h4>Research For The Right Thing</h4>
+                  <p>
+                    Research encompasses a cariety of investigative methods used
+                    to add context and insight to the design process
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="tickets" id="tickets">
+        <h2 class="tickets__title">Pricing Tickets</h2>
+        <ul class="tickets__list">
+          <li class="ticket">
+            <div class="ticket__header ticket__header--color-one">
+              <h3>Standart</h3>
+              <p>$20/mo per member</p>
+            </div>
+            <ul class="ticket__info-list">
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-one"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>One day pas access all lecture</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-one"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Lunch and snack</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-one"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Free T-Shirt</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-one"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Meet Event Speaker</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-one"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Front Seat</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-one"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Certificate</p>
+              </li>
+            </ul>
+            <button class="ticket__button" type="button">
+              <svg class="ticket__button-icon">
+                <use x="85" href="./images/icons.svg#icon-arrowright"></use>
+                <text x="20" y="30">Get Your Ticket</text>
+              </svg>
+            </button>
+          </li>
+          <li class="ticket ">
+            <div class="ticket__header ticket__header--color-two">
+              <h3>Standard ext.</h3>
+              <p>$59/mo per member</p>
+            </div>
+            <ul class="ticket__info-list">
+              <li class="ticket-info">
+                <svg class="ticket-info__icon ">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-two"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>One day pas access all lecture</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-two"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Lunch and snack</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-two"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Free T-Shirt</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-two"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Front Seating</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-two"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Custom Swags</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-two"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Certificate</p>
+              </li>
+            </ul>
+            <button class="ticket__button" type="button">
+              <svg class="ticket__button-icon">
+                <use x="85" href="./images/icons.svg#icon-arrowright"></use>
+                <text x="20" y="30">Get Your Ticket</text>
+              </svg>
+            </button>
+          </li>
+          <li class="ticket">
+            <div class="ticket__header ticket__header--color-three">
+              <h3>VIP</h3>
+              <p>$99/mo per member</p>
+            </div>
+            <ul class="ticket__info-list">
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-three"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>One day pas access all lecture</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-three"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Buffet Lunch</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-three"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Free T-Shirt</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-three"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>VIP Seating</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-three"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Crumpler Backpack</p>
+              </li>
+              <li class="ticket-info">
+                <svg class="ticket-info__icon">
+                  <use
+                    class="ticket-info__icon ticket-info__icon--color-three"
+                    href="./images/icons.svg#icon-checked"
+                  ></use>
+                </svg>
+                <p>Certificate</p>
+              </li>
+            </ul>
+            <button class="ticket__button" type="button">
+              <svg class="ticket__button-icon">
+                <use x="85" href="./images/icons.svg#icon-arrowright"></use>
+                <text x="20" y="30">Get Your Ticket</text>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="moments">
+        <svg class="moments__icon moments__icon--left moments__icon--hidden">
+          <use href="./images/icons.svg#icon-elipsearrow"></use>
+        </svg>
+        <svg class="moments__icon moments__icon--right">
+          <use href="./images/icons.svg#icon-elipsearrow"></use>
+        </svg>
+        <div class="moments__dots">
+          <div class="moments__dot"></div>
+          <div class="moments__dot moments__dot--covered"></div>
+          <div class="moments__dot moments__dot--covered"></div>
+        </div>
+        <div class="visitor visitor--active">
+          <div class="visitor__pic">
+            <img
+              src="./images/visitor_one.png"
+              alt="man-one"
+              class="visitor__pic visitor__pic--one"
+            />
+          </div>
+          <div class="visitor__text-box">
+            <h4 class="visitor__title">Jonathan Kennedy</h4>
+            <p class="visitor__subtitle">Founder of Product Hunt</p>
+            <div class="visitor__border"></div>
+            <p class="visitor__text">
+              "We just want to say thank you to Floko and to their highly
+              professional staff! They have supported us throughout all the
+              event. Everything was well organized! The event's turned to be a
+              great success! You deserve the highest grade!"
+            </p>
+          </div>
+        </div>
+        <div class="visitor visitor--hidden">
+          <div class="visitor__pic visitor__pic--two">
+            <img
+              src="./images/visitor_two.png"
+              alt="man-two"
+              class="visitor__pic visitor__pic--two"
+            />
+          </div>
+          <div class="visitor__text-box">
+            <h4 class="visitor__title">John Doe</h4>
+            <p class="visitor__subtitle">Co-founder of Product Hunt</p>
+            <div class="visitor__border"></div>
+            <p class="visitor__text">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat."
+            </p>
+          </div>
+        </div>
+        <div class="visitor visitor--hidden">
+          <div class="visitor__pic visitor__pic--three">
+            <img
+              src="./images/visitor_three.png"
+              alt="man-three"
+              class="visitor__pic visitor__pic--three"
+            />
+          </div>
+          <div class="visitor__text-box">
+            <h4 class="visitor__title">Mike Mitko</h4>
+            <p class="visitor__subtitle">Product Hunt Partner</p>
+            <div class="visitor__border"></div>
+            <p class="visitor__text">
+              "Duis aute irure dolor inreprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum"
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="navigation">
+        <svg class="navigation__icon">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+        <div class="navigation-list">
+          <div class="navigation__list-items">
+            <h5>Navigate</h5>
+            <p>Home</p>
+            <a class="navigation__list-text " href="#speakers">Speakers</a>
+            <a class="navigation__list-text " href="#about">About</a>
+            <a class="navigation__list-text" href="#tickets">Tickets</a>
+            <a class="navigation__list-text" href="#schedule">Schedule</a>
+            <a class="navigation__list-text " href="#moments"
+              >HELL YES! Moments</a
+            >
+            <a class="navigation__list-text " href="#contacts">Contact</a>
+          </div>
+          <div class="navigation__list-items">
+            <h5>Speakers</h5>
+            <p>Ananya Caro</p>
+            <p class="navigation__list-text ">Christa Couture</p>
+            <p class="navigation__list-text ">Duke Jelani</p>
+            <p class="navigation__list-text ">Dr. Arwin Adam</p>
+            <p class="navigation__list-text ">Pawrence Julie</p>
+            <p class="navigation__list-text ">Anderson Adom</p>
+          </div>
+          <div class="navigation__list-items">
+            <h5 class="navigation__list-text ">Newsletter</h5>
+            <p>
+              Sign up to be first to receive the latest stories inspiring us,
+              case studies, and industry news.
+            </p>
+            <form class="newsletter-form" name="newsletter" autocomplete="on">
+              <label>
+                <input
+                  class="newsletter-form__input"
+                  type="text"
+                  name="username"
+                  placeholder="Your name"
+                />
+              </label>
+              <label>
+                <input
+                  class="newsletter-form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Email address"
+                />
+              </label>
+              <button class="navigation__list-button" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="footer-border" id="contacts"></div>
+    <footer class="footer container">
+      <p>© Created by me.com.pl</p>
+      <ul class="footer-media-list">
+        <li class="footer-media">
+          <svg class="footer-media__icon">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+          <p class="footer-media__text">Twitter</p>
+        </li>
+        <li class="footer-media">
+          <svg class="footer-media__icon">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+          <p class="footer-media__text">Linkedin</p>
+        </li>
+        <li class="footer-media">
+          <svg class="footer-media__icon">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+          <p class="footer-media__text">Instagram</p>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

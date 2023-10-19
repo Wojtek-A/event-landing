@@ -1,0 +1,140 @@
+.meeting {
+  margin: 50px auto 0 auto;
+  width: 340px;
+  height: 610px;
+  position: relative;
+}
+.meeting-image {
+  position: absolute;
+  top: 0;
+}
+.meeting-image img {
+  width: 340px;
+  height: 620px;
+  object-fit: cover;
+  opacity: 0.6;
+  border-radius: 18px;
+}
+.meeting-timer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 340px;
+  height: 91px;
+  border-radius: 0 0 18px 18px;
+  opacity: 0.7;
+  background: getColor('black');
+  backdrop-filter: blur(15px);
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  &__value {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  &__label {
+    font-weight: 500;
+    opacity: 0.7;
+  }
+}
+.meeting-text {
+  width: 340px;
+  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: capitalize;
+  }
+  &__big {
+    margin-top: 38px;
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  &__small {
+    margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .meeting {
+    width: 735px;
+    height: 425px;
+  }
+  .meeting-image img {
+    width: 735px;
+    height: 425px;
+  }
+  .meeting-timer {
+    right: 0;
+    width: 350px;
+    border-radius: 0 0 18px 0;
+  }
+    .meeting-text {
+      width: 735px;
+      margin-left: 15px;
+      &__title {
+        text-align: center;
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+
+
+@media screen and (min-width: 1200px) {
+  .meeting {
+    margin-top: 150px;
+    width: unset;
+    height: unset;
+    position: unset;
+    display: flex;
+    justify-content: space-between;
+  }
+  .meeting-image {
+    width: 570px;
+    height: 505px;
+    position: relative;
+  }
+  .meeting-image img {
+    width: 570px;
+    height: 505px;
+    position: absolute;
+    object-fit: none;
+    opacity: 1;
+  }
+  .meeting-timer {
+    left: 0;
+    border-radius: 0 0 0 18px;
+  }
+  .meeting-text {
+    margin: 0;
+    position: unset;
+    width: 500px;
+    height: 440px;
+    &__title {
+      margin: 0;
+      font-size: 72px;
+      line-height: 76px;
+    }
+    &__small {
+      color: getColor('argent');
+    }
+  }
+}

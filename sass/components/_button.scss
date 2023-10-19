@@ -1,0 +1,40 @@
+%button {
+  border-radius: 130px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: getColor('black');
+  color: getColor('white');
+  font-family: $primaryfont;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -ms-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  &:hover,
+  &:focus {
+    background-color: getColor('blue');
+    cursor: pointer;
+  }
+}
+.btn-to-top {
+  @extend %button;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    transform: rotate(-90deg) translate(50%, -50%);
+    fill: getColor('white');
+  }
+}

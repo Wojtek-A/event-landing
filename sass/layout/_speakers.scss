@@ -1,0 +1,153 @@
+.speakers {
+  margin-top: 50px;
+  &__text-title {
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  &__text-small {
+    margin: 20px auto auto auto;
+    color: getColor('argent');
+    text-align: center;
+    line-height: 26px;
+  }
+  &__list {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.speaker {
+  height: 430px;
+  width: 340px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  text-align: center;
+  position: relative;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 18px;
+  }
+  &__name {
+    position: absolute;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    bottom: 52px;
+    left: 0;
+    right: 0;
+  }
+  &__info {
+    position: absolute;
+    line-height: 26px;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+  }
+  &__gradient {
+    width: 340px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: linear-gradient(
+      180deg,
+      rgba(29, 29, 29, 0) 20.38%,
+      getColor('black') 104.37%
+    );
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+  }
+  &--one {
+    background: getColor('vodka');
+  }
+  &--two {
+    background: getColor('peach');
+  }
+  &--three {
+    background: getColor('green');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .speakers {
+    &__text-title {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    &__text-small {
+      margin: 20px auto;
+    }
+    &__list {
+      flex-direction: row;
+    }
+  }
+  .speaker {
+    height: 325px;
+    width: 240px;
+    &__name {
+      bottom: 20px;
+    }
+    &__info {
+      font-size: 13px;
+      line-height: 20px;
+      bottom: 10px;
+    }
+    &__gradient {
+      width: 240px;
+      height: 120px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .speakers {
+    margin-top: 150px;
+    &__text-title {
+      width: 680px;
+      font-size: 72px;
+      line-height: 76px;
+    }
+    &__text-small {
+      margin: 20px auto auto auto;
+      width: 498px;
+    }
+    &__list {
+      margin-top: 56px;
+      justify-content: space-between;
+      gap: unset;
+    }
+  }
+  .speaker {
+    height: 456px;
+    width: 370px;
+    &__name {
+      font-size: 28px;
+      line-height: 28px;
+      bottom: 52px;
+    }
+    &__info {
+      font-size: 16px;
+      line-height: 26px;
+      bottom: 24px;
+    }
+    &__gradient {
+      width: 370px;
+      height: 250px;
+    }
+  }
+}

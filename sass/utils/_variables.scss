@@ -1,0 +1,29 @@
+$color: (
+  'white': #fff,
+  'argent': #bfbfbf,
+  'peach': #ffcf96,
+  'white-dark': #f0f0f0,
+  'platinum': #e5e5e5,
+  'black': #1d1d1d,
+  'pink': #f36b7f,
+  'green': #70d18c,
+  'blue': #5162fe,
+  'blue-light': #99dfda,
+  'begonia': #fa777c,
+  'brown': #de9d77,
+  'black-light': rgba(255, 255, 255, 0),
+  'onyx': #383838,
+  'orange': #ff5858,
+  'bear': #f09819,
+  'cinamon-satin': #c15d74,
+  'tan-crayola': #dd9c77,
+  'vodka': #b8b9ee,
+  'gray-dark': #272727,
+);
+
+@function getColor($key) {
+  @return map-get($color, $key);
+}
+
+$primaryfont: ('Manrope', sans-serif);
+$secondaryfont: ('Poppins', sans-serif);

@@ -1,0 +1,52 @@
+.footer-border {
+  margin-top: 50px;
+  height: 1px;
+  opacity: 0.1;
+  background: getColor('white');
+}
+
+.footer {
+  color: getColor('platinum');
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer-media-list {
+  list-style-type: none;
+  display: flex;
+  gap: 34px;
+}
+
+.footer-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &__icon {
+    height: 21px;
+    width: 21px;
+    fill: getColor('argent');
+  }
+  &__text {
+    line-height: 16px;
+    color: getColor('argent');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-border {
+    margin-top: 77px;
+  }
+  .footer {
+    padding: 52px 0;
+  }
+}

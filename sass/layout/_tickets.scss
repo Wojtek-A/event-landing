@@ -1,0 +1,162 @@
+.tickets {
+  margin-top: 50px;
+  &__title {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  &__list {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+.ticket {
+  width: 350px;
+  height: 510px;
+  position: relative;
+  border-radius: 18px;
+  border: 1px solid getColor('onyx');
+  background: getColor('gray-dark');
+  &__info-list {
+    padding-top: 15px;
+    padding-left: 38px;
+    list-style-type: none;
+  }
+  &__header {
+    height: 95px;
+    border-radius: 18px 18px 0px 0px;
+    text-align: center;
+    &--color-one {
+      background-color: getColor('black');
+    }
+    &--color-two {
+      background-color: getColor('pink');
+    }
+    &--color-three {
+      background-color: getColor('green');
+    }
+    h3 {
+      padding-top: 15px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+    p {
+      padding-top: 7px;
+      font-size: 16px;
+      line-height: 26px;
+      opacity: 0.8;
+    }
+  }
+  &__button {
+    @extend %button;
+    width: 260px;
+    height: 51px;
+    position: absolute;
+    left: 50%;
+    margin-top: 25px;
+    border-radius: 54px;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  &__button-icon {
+    height: 48px;
+    width: 250px;
+    fill: getColor('white');
+  }
+}
+.ticket-info {
+  height: 26px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  &__icon {
+    height: 26px;
+    max-width: 26px;
+    &--color-one {
+      fill: getColor('white');
+    }
+    &--color-two {
+      fill: getColor('pink');
+    }
+    &--color-three {
+      fill: getColor('green');
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tickets {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+  .ticket {
+    width: 750px;
+    height: 325px;
+    &__info-list {
+      padding-left: 45px;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 35px;
+      justify-content: center;
+    }
+    &__button {
+      margin-top: 40px;
+    }
+  }
+  .ticket-info {
+    width: 208px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tickets {
+    margin-top: 150px;
+    &__title {
+      font-size: 72px;
+      line-height: 76px;
+    }
+    &__list {
+      margin-top: 82px;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: unset;
+    }
+  }
+  .ticket {
+    width: 370px;
+    height: 628px;
+    &__info-list {
+      padding-top: 59px;
+      padding-left: 38px;
+      display: block;
+    }
+    &__header {
+      height: 124px;
+      text-align: unset;
+      h3 {
+        padding-top: 26px;
+        padding-left: 38px;
+        font-size: 36px;
+      }
+      p {
+        padding-left: 38px;
+      }
+    }
+    &__button {
+      width: 302px;
+      margin-top: 73px;
+    }
+  }
+  .ticket-info {
+    width: unset;
+  }
+}
